@@ -160,142 +160,75 @@
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
+ <!--Actual List-->
 
-  <!--SLIDING IMAGE-->
-  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="carousal/f1.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h2>Welcome!!</h2>
-          <p>Use this site to boost your productivity.</p>
+ <div class="container my-4">
+  <nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">My To-Do List</a>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row my-5">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <form id="form-Task">
+              <div class="form-group">
+                <input type="text" id="title" class="form-control" maxlength="50" autocomplete="off" placeholder="Title"
+                  required>
+              </div>
+              <div class="form-group">
+                <textarea id="description" cols="30" rows="10" class="form-control" maxlength="500" autocomplete="off"
+                  placeholder="Description" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-success btn-block">Save</button>
+            </form>
+          </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="carousal/f2.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h2>Explore</h2>
-          <p>Try out our various tools for your ease.</p>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-sm-3 text-left">
+            <p class="font-weight-bold">Title</p>
+          </div>
+          <div class="col-sm-6 text-left">
+            <p class="font-weight-bold">Description</p>
+          </div>
+          <div class="col-sm-3 text-right">
+            <p class="font-weight-bold">Delete</p>
+          </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <img src="carousal/f3.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h2>Improve</h2>
-          <p>Improve each and every day by setting a target.</p>
-        </div>
+        <hr>
+        <div id="tasks"></div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
+</div>
 
-  <!--CARDS-->
-  <div class="container my-4">
+  <script src="./app.js"></script>
 
-    <div class="row mb-2">
-      <div class="col-md-6">
-        <div
-          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-primary"> </strong>
-            <h3 class="mb-0 text-danger">To-Do List</h3>
-            <div class="mb-1 text-muted">New</div>
-            <p class="card-text mb-auto">Organize your tasks with a list and make everything much more manageable.</p>
-            <a href="todo.html" class="stretched-link"><button class="btn btn-primary my-3">Go to item</button></a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <img src="card/todo.jpg" alt="pick-image" alt="" width="200" height="250">
-          </div>
-        </div>
+    <!--FOOTER-->
+    <footer class="blog-footer">
+        <p>Website built for <a href="https://getbootstrap.com/">BITShine</a> by <a
+            href="https://twitter.com/mdo">Group27</a>.</p>
+        <p>
+          <a href="#">Back to top</a>
+        </p>
+      </footer>
       </div>
-
-      <div class="col-md-6">
-        <div
-          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-success"> </strong>
-            <h3 class="mb-0 text-success">Time Table</h3>
-            <div class="mb-1 text-muted">New</div>
-            <p class="mb-auto">College time table that you need to follow.</p>
-            <a href="#" class="stretched-link"><button class="btn btn-primary my-3">Go to item</button></a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <img src="card/table.jpg" alt="pick-image" alt="" width="200" height="250">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row mb-2">
-      <div class="col-md-6">
-        <div
-          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-primary"> </strong>
-            <h3 class="mb-0 text-warning">Timer</h3>
-            <div class="mb-1 text-muted">New</div>
-            <p class="card-text mb-auto">Track your speed of solving questions with the help of this tool.</p>
-            <a href="#" class="stretched-link"><button class="btn btn-primary my-3">Go to item</button></a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <img src="card/timer.jpg" alt="pick-image" alt="" width="200" height="250">
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div
-          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-success"> </strong>
-            <h3 class="mb-0 text-primary">Daily Planner</h3>
-            <div class="mb-1 text-muted">New</div>
-            <p class="mb-auto">Plan your day in advance and keep organized throughout the day.</p>
-            <a href="#" class="stretched-link"><button class="btn btn-primary my-3">Go to item</button></a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <img src="card/plan.jpg" alt="pick-image" alt="" width="200" height="250">
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-
-  <!--FOOTER-->
-  <footer class="blog-footer">
-    <p>Website built for <a href="https://getbootstrap.com/">BITShine</a> by <a
-        href="https://twitter.com/mdo">Group27</a>.</p>
-    <p>
-      <a href="#">Back to top</a>
-    </p>
-  </footer>
-  </div>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-</body>
-
-</html>
+    
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    </body>
+    
+    </html>
